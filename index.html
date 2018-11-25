@@ -17,15 +17,19 @@
           name: "John",
           age: 30
         };
-        handleClick(e) {
-          console.log(e.target);
-        }
-        handleMouseOver(e) {
+        handleClick = e => {
+          //   console.log(this.state);
+          this.setState({
+            name: "Mary",
+            age: 25
+          });
+        };
+        handleMouseOver = e => {
           console.log(e.target, e.pageX);
-        }
-        handleCopy(e) {
+        };
+        handleCopy = e => {
           console.log("Try being original once.");
-        }
+        };
         render() {
           return (
             <div>
